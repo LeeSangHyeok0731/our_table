@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    position:relative;
+    display: flex;
+    justify-content: center;
+}
+p{
+    margin: 0;
+}
+a{
+    text-decoration: none;;
+}
+.app{
+    height:32px;
+    background: rgb(147, 112, 98);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    font-size:13px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+}
+.app #appicon{
+    margin-right:8px;
+}
+.app span{
+    font-weight: bold;
+    margin-left:4px;
+}
+.header{
+    position:fixed;
+    width:100%;
+    border-bottom: 1px solid rgba(224, 224, 224, 0.5);
+    background-color: white;
+    z-index: 10;
+}
+#title{
+    color:rgb(66, 66, 66);
+    cursor:pointer;
+    text-decoration: none;
+    height:48px;  
+}
+#header-top{
+    display: flex;
+    top: 0px;
+    width: 1024px;
+    height: 56px;
+    padding: 14px 8px 0 0;
+    align-content: flex-end;
+}
+#select{
+    display:flex;
+    color:black;
+    margin:36px 18px 0 0;
+    height: 50px;
+    width:498px;
+    justify-content: space-between;
+}
+#store, #recipe, #guide{
+    padding: 0 7px 10px 7px;
+    margin-bottom: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    color:black;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+}
+.menu{
+    display: flex;
+    background-color:white;
+    width: 1024px;
+    height: 130px;
+    margin: 0 247.6px 0 247.6px;
+    top: 0;
+    height: 129.6px;
+    justify-content: center;
+    flex-direction: column;
+}
+#event, #curation{
+    color:rgb(191, 145, 126);
+    font-weight: bold;
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+}
+.divid{
+    position:relative;
+    display: inline-block;
+    width: 0.5px;
+    top:4px;
+    height: 16px;
+    background: rgb(224, 224, 224);
+}
+#storeMenu{
+    display: none;
+    width:100%;
+    height: 445px;
+    justify-content: center;
+    background-color:white;
+    box-shadow: 0 20px 5px 0 rgb(184, 184, 184, 0.3);
+}
+#storeBox_1{
+    display: flex;
+    width:100%;
+    height: 445px;
+    justify-content: center;
+}
+#storeBox{
+    display:flex;
+    width:68%;
+    top:10px;
+    height: 445px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.storeLine{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 440px;
+    flex-direction: column;
+    align-content: space-between;
+}
+#storeHome, #editorRecommend, #limited, #theBest, #newItem, #plan, #brand, #food, #kitchen, #living, #homeApplication{
+    display: flex;
+    color: rgb(147, 112, 98);
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-size: larger;
+    padding:10px;
+}
+.list{
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    color:black;
+    font-weight:500;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+#main{
+    width:1024px;
+    height: auto;
+    padding-top:160px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+#ad_1{
+    width: 1023px;
+    height: 307px;
+}
+.editorBox{
+    width: 1050px;
+    height: 787px;
+}
+.message{
+    font-family: "Noto Serif KR", serif, Helvetica, "Helvetica Neue", Arial;
+    color: rgb(147, 112, 98);
+    padding: 70px 30% 50px 35%;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 43px;
+}
+.img{
+    width: 327px;
+    height: 327px;
+}
+.item_box{
+    width: 350px;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Noto Sans KR", sans-serif;
+    cursor:pointer;
+}
+.name{
+    width: 326px;
+    height: 48px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 16px 0 4px 0;
+}
+.originPrice{
+    font-size: 13px;
+    text-decoration:line-through;   
+    font-weight: normal;
+    font-family: "Noto Sans KR", Helvetica, "Helvetica Neue", Arial, "sans-serif";
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(189, 189, 189);
+}
+.price_info{
+    width: 326px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.price_into span{
+    font-family: "Noto Sans KR", Helvetica, "Helvetica Neue", Arial, "sans-serif";
+    margin: 8px 0px 3px;
+    height:24px;
+    font-weight: bolder;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    color: rgb(0, 0, 0);
+}
+.price{
+    font-family: "Noto Sans KR", Helvetica, "Helvetica Neue", Arial, "sans-serif";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.5px;
+    color: rgb(0, 0, 0);
+}
+.discount{
+    width: 40px;
+    height: 29px;
+    font-family: "Noto Sans KR", Helvetica, "Helvetica Neue", Arial, "sans-serif";
+    margin-right: 4px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(246, 111, 88);
+}
+.item_box_set{
+    display: flex;
+    flex-direction: row;
+    font-weight:400;
+}
+#item_change_box{
+    display: flex;
+    height:1420px;
+    height:auto;
+    overflow:hidden;
+    transition: transform 0.5s ease;
+    transition-duration: 5s;
+}
