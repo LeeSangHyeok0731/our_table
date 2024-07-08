@@ -1,19 +1,20 @@
-  const div1 = document.getElementById('editorChoice1');
-  const div2 = document.getElementById('editorChoice2');
+const div1 = document.getElementById('editorChoice1');
+const div2 = document.getElementById('editorChoice2');
 
-  div1.addEventListener('click', function() {
-    div1.style.transform = 'translateX(-100%)';
+let changePage = false;
+  
+function changeImg(){
+  changePage = !changePage;
+  if(changePage){
+    div1.style.transform = 'translateX(-1050px)';
     div2.style.transform = 'translateX(-1050px)';
-    div1.classList.remove('active');
-    div2.classList.add('active');
-  });
-
-  div2.addEventListener('click', function() {
+  }
+  else{
     div1.style.transform = 'translateX(0)';
     div2.style.transform = 'translateX(0)';
-    div1.classList.add('active');
-    div2.classList.remove('active');
-  });
+  }
+};
+
 
 
 
