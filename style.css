@@ -151,7 +151,7 @@ a{
     width: 1023px;
     height: 307px;
 }
-.editorBox{
+.mainBox{
     width: 1050px;
     height: 787px;
 }
@@ -166,7 +166,6 @@ a{
 .img{
     width: 327px;
     height: 327px;
-    transition: translate 0.5s ease;
 }
 .item_box{
     width: 350px;
@@ -176,7 +175,6 @@ a{
     flex-direction: column;
     font-family: "Noto Sans KR", sans-serif;
     cursor:pointer;
-    transition: translate 0.5s ease;
 
 }
 .name{
@@ -188,7 +186,6 @@ a{
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 16px 0 4px 0;
-    transition: translate 0.5s ease;
 }
 .originPrice{
     font-size: 13px;
@@ -198,7 +195,6 @@ a{
     overflow: hidden;
     text-overflow: ellipsis;
     color: rgb(189, 189, 189);
-    transition: translate 0.5s ease;
 }
 .price_info{
     width: 326px;
@@ -206,7 +202,6 @@ a{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    transition: translate 0.5s ease;
 }
 .price_into span{
     font-family: "Noto Sans KR", Helvetica, "Helvetica Neue", Arial, "sans-serif";
@@ -217,7 +212,6 @@ a{
     line-height: 19px;
     letter-spacing: -0.5px;
     color: rgb(0, 0, 0);
-    transition: translate 0.5s ease;
 }
 .price{
     font-family: "Noto Sans KR", Helvetica, "Helvetica Neue", Arial, "sans-serif";
@@ -226,7 +220,6 @@ a{
     line-height: 29px;
     letter-spacing: -0.5px;
     color: rgb(0, 0, 0);
-    transition: translate 0.5s ease;
 }
 .discount{
     width: 40px;
@@ -236,25 +229,23 @@ a{
     font-weight: 500;
     font-size: 20px;
     color: rgb(246, 111, 88);
-    transition: translate 0.5s ease;
 }
 .item_box_set{
     display: flex;
     flex-direction: row;
     font-weight:400;
-    transition: translate 0.5s ease;
-
 }
 #item_change_box{
     display: flex;
     height:1420px;
     height:auto;
     overflow:hidden;
-    transition: translate 0.5s ease;
 }
-#editorChoice1{
-    transition: translate 0.5s ease;
+#editorChoice1, #editorChoice2{
+    transition: all 0.5s;
 }
-#editorChoice2{
-    transition: translate 0.5s ease;
+#choice1, #choice2{
+    width:100px;
+    height:.5px;
+    background-color:red;
 }

@@ -6,8 +6,8 @@ let changePage = false;
 function changeImg(){
   changePage = !changePage;
   if(changePage){
-    div1.style.transform = 'translateX(-1050px)';
-    div2.style.transform = 'translateX(-1050px)';
+    div1.style.transform = 'translateX(-100%)';
+    div2.style.transform = 'translateX(-100%)';
   }
   else{
     div1.style.transform = 'translateX(0)';
