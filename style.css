@@ -244,8 +244,13 @@ a{
 #editorChoice1, #editorChoice2{
     transition: all 0.5s;
 }
-#choice1, #choice2{
-    width:100px;
+#choice1{
+    width:50px;
     height:.5px;
     background-color:red;
+}
+#choice2{
+    width:50px;
+    height:.5px;
+    background-color:gainsboro;
 }

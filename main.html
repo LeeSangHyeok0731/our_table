@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="header">
+    <header class="header">
         <div class="app">
             <img id="appicon" src="appicon.svg" alt="app icon" />
             <p>앱 다운받고</p>
@@ -101,8 +99,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="main">
+    </header>
+    <main id="main">
         <img id="ad_1" src="ad_1.png" alt="ad_1" />
         <div class="mainBox">
             <h1 class="message">EDITOR'S CHOICE</h1>
@@ -173,7 +171,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div style="display:flex; flex-direction:row">
                 <div class="changeDot" id="choice1">
                 </div>
                 <div class="changeDot" id="choice2">
@@ -183,9 +181,7 @@
         <div class="mainBox">
             <h1 class="message">TIME LIMITED</h1>
         </div>
-
-    </div>
+    </main>
     <script src="function.js"></script>
 </body>
-
 </html>

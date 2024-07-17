@@ -1,3 +1,4 @@
+/*
 const div1 = document.getElementById('editorChoice1');
 const div2 = document.getElementById('editorChoice2');
 
@@ -14,7 +15,6 @@ function changeImg(){
     div2.style.transform = 'translateX(0)';
   }
 };
-
 
 
 
@@ -192,8 +192,77 @@ storeMenu.addEventListener('mouseover', (event) => {
 storeMenu.addEventListener('mouseout', (event) => {
     storeMenu.style.display = 'none';
 }
-);
+);*/
+const div1 = document.getElementById('editorChoice1');
+const div2 = document.getElementById('editorChoice2');
 
+let changePage = false;
+  
+function changeImg() {
+  changePage = !changePage;
+  const translateValue = changePage ? '-100%' : '0';
+  div1.style.transform = `translateX(${translateValue})`;
+  div2.style.transform = `translateX(${translateValue})`;
+  if(changePage){
+    document.getElementById('choice1').style.background = 'gainsboro';
+    document.getElementById('choice2').style.background = 'red';
+  }
+  else{
+    document.getElementById('choice1').style.background = 'red';
+    document.getElementById('choice2').style.background = 'gainsboro';
+  }
+}
+
+const elements = [
+  { id: 'store', hoverColor: 'rgb(191, 145, 126)' },
+  { id: 'recipe', hoverColor: 'rgb(191, 145, 126)' },
+  { id: 'guide', hoverColor: 'rgb(191, 145, 126)' },
+  { id: 'storeHome', hoverColor: 'rgb(246, 111, 88)' },
+  { id: 'editorRecommend', hoverColor: 'rgb(246, 111, 88)' },
+  { id: 'limited', hoverColor: 'rgb(246, 111, 88)' },
+  { id: 'theBest', hoverColor: 'rgb(246, 111, 88)' },
+  { id: 'newItem', hoverColor: 'rgb(246, 111, 88)' },
+  { id: 'plan', hoverColor: 'rgb(246, 111, 88)' },
+  { id: 'brand', hoverColor: 'rgb(246, 111, 88)' },
+  { id: 'food', hoverColor: 'rgb(246, 111, 88)' },
+  { id: 'kitchen', hoverColor: 'rgb(246, 111, 88)' },
+  { id: 'living', hoverColor: 'rgb(246, 111, 88)' },
+  { id: 'homeApplication', hoverColor: 'rgb(246, 111, 88)' },
+];
+
+elements.forEach(({ id, hoverColor }) => {
+  const element = document.getElementById(id);
+  const originalColor = element.style.color;
+
+  element.addEventListener('mouseover', () => {
+    element.style.color = hoverColor;
+  });
+
+  element.addEventListener('mouseout', () => {
+    element.style.color = originalColor;
+  });
+});
+
+const storeMenu = document.getElementById('storeMenu');
+const store = document.getElementById('store');
+
+store.addEventListener('mouseover', () => {
+  store.style.color = 'rgb(191, 145, 126)';
+  storeMenu.style.display = 'block';
+});
+
+store.addEventListener('mouseout', () => {
+  store.style.color = storeColor;
+  storeMenu.style.display = 'none';
+});
+
+storeMenu.addEventListener('mouseover', () => {
+  storeMenu.style.display = 'block';
+});
+
+storeMenu.addEventListener('mouseout', () => {
+  storeMenu.style.display = 'none';
+});
 
 
 
