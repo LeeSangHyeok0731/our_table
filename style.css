@@ -29,7 +29,7 @@ a{
     font-weight: bold;
     margin-left:4px;
 }
-.header{
+header{
     position:fixed;
     width:100%;
     border-bottom: 1px solid rgba(224, 224, 224, 0.5);
@@ -139,7 +139,7 @@ a{
     padding-left: 10px;
     padding-bottom: 15px;
 }
-#main{
+main{
     width:1024px;
     height: auto;
     padding-top:160px;
@@ -230,7 +230,7 @@ a{
     font-size: 20px;
     color: rgb(246, 111, 88);
 }
-.item_box_set{
+.item_box_set{/*header*/
     display: flex;
     flex-direction: row;
     font-weight:400;
